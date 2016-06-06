@@ -20,3 +20,20 @@ parejaInfiel(Pareja, Contexto):-
     enPareja(PersonaB, _, Pareja2),
     loPrefiereAntesQueASuPareja(Persona, PersonaB, Contexto),
     loPrefiereAntesQueASuPareja(PersonaB, Persona, Contexto).
+    
+    
+personasNoEnEstaPareja(Personas, Pareja, Desparejadas):-
+        findall(Persona, (member(Persona, Personas), not(enPareja(Persona, _, Pareja))), Desparejadas).
+
+contexto2([], []).
+contexto2(Personas, [pareja(Persona1, Persona2) | Parejas]):-
+    member(Persona1, Personas),
+    preferencias(Persona1, Preferencias),
+    member(Persona2, Personas),
+    member(Persona2, Preferencias),
+    personasNoEnEstaPareja(Personas, pareja(Persona1, Persona2), NuevaPersonas),
+    contexto2(NuevaPersonas, Parejas).
+
+contexto(Parejas):-
+    findall(Persona, preferencias(Persona, _), Personas),
+    contexto2(Personas, Parejas).
