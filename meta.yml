@@ -1,0 +1,16 @@
+---
+name: Práctica Agencia Matrimonial
+locale: es
+type: practice
+beta: false
+teacher_info: |
+  Un ejercicio tipo parcial convertido en guía con ejercicios de:
+
+    * Manejo de Listas
+    * Forall
+    * Explosión combinatoria
+    * Findall
+    * Functores (muy poco)
+language: prolog
+id_format: '%05d'
+order: []
