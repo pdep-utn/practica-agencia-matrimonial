@@ -1,0 +1,1 @@
+Realizar el predicado `esEstable\1` que verifica si el parametro es un contexto en el cual todas las parejas armadas son fieles dentro del contexto.

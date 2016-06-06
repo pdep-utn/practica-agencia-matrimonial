@@ -13,4 +13,9 @@ teacher_info: |
     * Functores (muy poco)
 language: prolog
 id_format: '%05d'
-order: []
+order:
+- 1
+- 2
+- 3
+- 4
+- 5
