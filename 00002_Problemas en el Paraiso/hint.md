@@ -1,0 +1,1 @@
+Existe el predicado `nth0\3` que relaciona una posición en una lista con esa lista y un elemento de la misma.
