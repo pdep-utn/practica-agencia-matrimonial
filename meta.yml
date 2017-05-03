@@ -12,7 +12,7 @@ teacher_info: |
     * Findall
     * Functores (muy poco)
 language: prolog
-id_format: '%05d'
+id_format: "%05d"
 order:
 - 1
 - 2
